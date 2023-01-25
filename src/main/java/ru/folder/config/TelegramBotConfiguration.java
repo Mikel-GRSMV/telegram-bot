@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//Указывается для того чтобы считывать файл конфигурации(но пока работает и без этой аннотации):
-//@PropertySource("application.properties")
 public class TelegramBotConfiguration {
     @Value("${bot.name}")
     String botName;

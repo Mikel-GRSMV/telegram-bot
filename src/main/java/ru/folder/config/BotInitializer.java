@@ -11,12 +11,14 @@ import ru.folder.service.TelegramBotMainClass;
 
 @Component
 public class BotInitializer {
+
     private TelegramBotMainClass telegramBot;
 
     @Autowired
     public void setTelegramBot(TelegramBotMainClass telegramBot) {
         this.telegramBot = telegramBot;
     }
+
 
     @EventListener({ContextRefreshedEvent.class})
     public void init() throws TelegramApiException {
